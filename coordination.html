@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal & Financial Coordination | Black Diamond Holdings</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 500px;
+    }
+
+    .close {
+      color: #aaa;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+
+<body style="background-color: #181818;" class="text-white">
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-r from-[#9B59B6] to-[#8e44ad] text-white py-24 px-6 text-center">
+    <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('https://images.unsplash.com/photo-1563186517-85c91b93ab13');"></div>
+    <div class="relative z-10">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Legal & Financial Coordination Services</h1>
+      <p class="text-lg md:text-xl max-w-3xl mx-auto">Navigate the complexities of legal and financial processes with expert guidance. Let us help you manage, structure, and grow your investment with confidence and ease.</p>
+      <!-- Trigger/Open The Modal -->
+      <a href="javascript:void(0)" class="inline-block px-6 py-3 bg-[#9B59B6] text-white rounded-lg hover:bg-[#8e44ad] transition"
+        onclick="openModal()">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Why Legal & Financial Coordination Section -->
+  <section class="max-w-6xl mx-auto py-16 px-6 text-center">
+    <h2 class="text-3xl font-semibold mb-6 text-[#9B59B6]">Why Legal & Financial Coordination Matters</h2>
+    <p class="text-gray-700 leading-relaxed max-w-3xl mx-auto mb-10">In real estate investment, managing legal and financial aspects is crucial for long-term success. Our services help you navigate complex legal structures, tax implications, and financial strategies to ensure a seamless and profitable investment journey.</p>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="p-6 bg-[#8e44ad] rounded-xl shadow-xl hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold text-white mb-4">Legal Expertise</h3>
+        <p class="text-gray-200">Our team of legal experts is here to guide you through the entire property acquisition and management process. From contracts to compliance, we ensure your investment is secure and legally sound.</p>
+      </div>
+      <div class="p-6 bg-[#9B59B6] rounded-xl shadow-xl hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold text-white mb-4">Financial Strategy</h3>
+        <p class="text-gray-200">Maximize the value of your investment with our financial planning services. We help you structure your assets, manage taxes, and leverage financial opportunities for long-term growth and stability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Legal and Financial Services -->
+  <section class="bg-[#F4F4F9] py-16 px-6 text-center">
+    <h2 class="text-3xl font-semibold mb-10 text-[#8e44ad]">Our Key Legal & Financial Services</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-[#9B59B6] rounded-xl shadow-lg hover:shadow-2xl transition">
+        <h3 class="text-xl font-semibold text-white mb-4">Contract Structuring</h3>
+        <p class="text-gray-200">We help you draft and structure contracts that protect your investment, ensuring all parties are legally compliant and your rights are safeguarded.</p>
+      </div>
+      <div class="p-6 bg-[#8e44ad] rounded-xl shadow-lg hover:shadow-2xl transition">
+        <h3 class="text-xl font-semibold text-white mb-4">Tax Optimization</h3>
+        <p class="text-gray-200">Our financial experts work with you to optimize your tax strategy, helping you save money, avoid penalties, and increase your overall returns.</p>
+      </div>
+      <div class="p-6 bg-[#9B59B6] rounded-xl shadow-lg hover:shadow-2xl transition">
+        <h3 class="text-xl font-semibold text-white mb-4">Asset Protection</h3>
+        <p class="text-gray-200">We advise on asset protection strategies, ensuring that your properties are safe from unforeseen liabilities and risks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Work -->
+  <section class="max-w-6xl mx-auto py-16 px-6 text-center bg-[#8e44ad] text-white">
+    <h2 class="text-3xl font-semibold mb-6">How We Work with You</h2>
+    <p class="text-lg mb-8 text-gray-200">Our process is built to provide clarity, transparency, and peace of mind. From the initial consultation to the final implementation, we work hand-in-hand with you to ensure your investment is secure, profitable, and well-managed.</p>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-[#9B59B6] rounded-xl shadow-xl hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold mb-4">Step 1: Initial Consultation</h3>
+        <p class="text-gray-200">We begin by understanding your investment goals and assessing your current financial situation to design a tailored strategy.</p>
+      </div>
+      <div class="p-6 bg-[#8e44ad] rounded-xl shadow-xl hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold mb-4">Step 2: Strategic Planning</h3>
+        <p class="text-gray-200">Based on your goals, we create a comprehensive legal and financial plan that maximizes your returns while protecting your assets.</p>
+      </div>
+      <div class="p-6 bg-[#9B59B6] rounded-xl shadow-xl hover:shadow-2xl transition">
+        <h3 class="text-2xl font-semibold mb-4">Step 3: Ongoing Support</h3>
+        <p class="text-gray-200">We provide continuous support and advice, helping you navigate challenges and making sure your strategy evolves with the market.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="text-center py-20 px-6 bg-[#181818] text-white">
+    <h2 class="text-3xl font-semibold mb-6">Get in Touch for Expert Legal & Financial Coordination</h2>
+    <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-10">Ready to take control of your investment strategy? Contact us today to schedule a consultation and learn how we can help you manage your legal and financial affairs with expertise and ease.</p>
+    <a href="tel:+15103436160"
+      class="inline-block px-8 py-4 bg-[#9B59B6] text-white font-semibold rounded-lg hover:bg-[#8e44ad] transition">Call Us
+      Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#181818] text-white text-center py-6">
+    <p>&copy; 2025 Black Diamond Holdings. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal Section -->
+  <!-- Trigger/Open The Modal -->
+  <a href="javascript:void(0)" class="inline-block px-6 py-3 bg-[#9B59B6] text-white rounded-lg hover:bg-[#8e44ad] transition"
+    onclick="openModal()">Learn More</a>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal hidden fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-75">
+    <div class="modal-content bg-white p-8 rounded-lg">
+      <span class="close text-[#9B59B6]" onclick="closeModal()">&times;</span>
+      <h2 class="text-2xl font-semibold mb-4">Get More Information</h2>
+      <p>Our experts are ready to assist you in managing your legal and financial coordination. Please fill out the form
+        below, and we'll contact you shortly.</p>
+      <form action="#" method="POST" class="mt-4">
+        <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-3 border rounded-lg mb-4">
+        <input type="email" name="email" placeholder="Your Email" class="w-full px-4 py-3 border rounded-lg mb-4">
+        <textarea name="message" rows="4" placeholder="Your Message" class="w-full px-4 py-3 border rounded-lg mb-4"></textarea>
+        <button type="submit" class="w-full py-3 bg-[#9B59B6] text-white rounded-lg hover:bg-[#8e44ad] transition">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Modal functionality
+    function openModal() {
+      document.getElementById("myModal").classList.remove("hidden");
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").classList.add("hidden");
+    }
+  </script>
+</body>
+
+</html>
